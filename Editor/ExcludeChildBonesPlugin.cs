@@ -16,12 +16,12 @@ namespace Narazaka.VRChat.ExcludeChildBones.Editor
         public override string QualifiedName => "net.narazaka.vrchat.exclude-child-bones";
         protected override void Configure()
         {
-            InPhase(BuildPhase.Transforming).WithRequiredExtension(typeof(AnimatorServicesContext), seq => seq.Run("ExcludeChildBones", Pass));
+            InPhase(BuildPhase.Transforming).AfterPlugin("nadena.dev.modular-avatar").WithRequiredExtension(typeof(AnimatorServicesContext), seq => seq.Run("ExcludeChildBones", Pass));
         }
 
         void Pass(BuildContext ctx)
         {
-            var excludeChildBones = ctx.AvatarRootObject.GetComponentsInChildren<ExcludeChildBones>();
+            var excludeChildBones = ctx.AvatarRootObject.GetComponentsInChildren<ExcludeChildBones>(true);
             foreach (var excludeChildBone in excludeChildBones)
             {
                 Process(ctx, excludeChildBone);
