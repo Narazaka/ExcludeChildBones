@@ -2,7 +2,7 @@
   "name": "net.narazaka.vrchat.exclude-child-bones",
   "version": "1.0.0",
   "displayName": "Exclude Child Bones (for old DynamicBones)",
-  "description": "Exclude Child Bones (for old DynamicBones)",
+  "description": "Move child bones other than KeepTransforms to another location, while keeping them follow their original position (using Constraints).",
   "author": {
     "name": "Narazaka",
     "url": "https://github.com/Narazaka"
@@ -13,6 +13,6 @@
   "unity": "2022.3",
   "vpmDependencies": {
     "com.vrchat.avatars": ">=3.7.5",
-    "com.vrchat.worlds": ">=3.7.5"
+    "nadena.dev.ndmf": ">=1.7.5 <2.0.0-a"
   }
 }

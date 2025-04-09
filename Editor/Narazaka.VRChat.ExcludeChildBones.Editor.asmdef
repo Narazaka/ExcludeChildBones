@@ -1,0 +1,20 @@
+{
+    "name": "Narazaka.VRChat.ExcludeChildBones.Editor",
+    "rootNamespace": "",
+    "references": [
+        "VRC.SDKBase",
+        "nadena.dev.ndmf",
+        "Narazaka.VRChat.ExcludeChildBones"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
