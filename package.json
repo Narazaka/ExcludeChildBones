@@ -1,6 +1,6 @@
 {
   "name": "net.narazaka.vrchat.exclude-child-bones",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Exclude Child Bones (for old DynamicBones)",
   "description": "Move child bones other than KeepTransforms to another location, while keeping them follow their original position (using Constraints).",
   "author": {
